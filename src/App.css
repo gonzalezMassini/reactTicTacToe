@@ -1,7 +1,105 @@
 .App {
   text-align: center;
 }
+.box:nth-child(1) {
+  border-left: none;
+  border-top: none;
+}
+.box:nth-child(2) {
+  border-top: none;
+}
+.box:nth-child(3) {
+  border-right: none;
+  border-top: none;
+}
+.box:nth-child(4) {
+  border-left: none;
+}
+.box:nth-child(6) {
+  border-right: none;
+}
+.box:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+.box:nth-child(8) {
+  border-bottom: none;
+}
+.box:nth-child(9) {
+  border-bottom: none;
+  border-right: none;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 10em);
+  /* border: solid; */
+  height: 500px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2em;
+  transition: all 0.3s linear;
+}
+.symbol {
+  color: rgb(0, 0, 0);
+  transition: all 0.3s linear;
+  margin-top: 4rem;
+  transition: all 0.3s linear;
+}
 
+.scoreTitle {
+  margin-bottom: 0;
+  margin-top: 4rem;
+  transition: all 0.3s linear;
+}
+.scores {
+  display: inline;
+  margin: 1em;
+  transition: all 0.3s linear;
+}
+.winnerTitle {
+  margin: 0;
+  margin-bottom: 1rem;
+  transition: all 0.3s linear;
+}
+.btn {
+  display: inline-block;
+  background: black;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background: hsl(0, 0%, 58%);
+  color: hsl(0, 0%, 0%);
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+}
+
+/* a {
+  text-decoration: none;
+  
+} */
+.box {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  text-align: center;
+  height: 11rem;
+  transition: all 0.3s linear;
+}
+.box:hover {
+  background-color: #282c3494;
+  cursor: pointer;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +133,96 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* //////////dark mode styling////// */
+
+.titleDark {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.scoreTitleDark {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 4rem;
+  transition: all 0.3s linear;
+}
+.scoresDark {
+  display: inline;
+  margin: 1em;
+  color: white;
+  transition: all 0.3s linear;
+}
+.boxDark {
+  border: solid;
+  text-align: center;
+  height: 11rem;
+  border-color: white;
+  transition: all 0.3s linear;
+}
+.boxDark:hover {
+  background-color: #91959e94;
+  cursor: pointer;
+}
+
+.boxDark:nth-child(1) {
+  border-left: none;
+  border-top: none;
+}
+.boxDark:nth-child(2) {
+  border-top: none;
+}
+.boxDark:nth-child(3) {
+  border-right: none;
+  border-top: none;
+}
+.boxDark:nth-child(4) {
+  border-left: none;
+}
+.boxDark:nth-child(6) {
+  border-right: none;
+}
+.boxDark:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+.boxDark:nth-child(8) {
+  border-bottom: none;
+}
+.boxDark:nth-child(9) {
+  border-bottom: none;
+  border-right: none;
+}
+.symbolDark {
+  color: white;
+  transition: all 0.3s linear;
+  margin-top: 4rem;
+}
+
+.btnDark {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  outline: none;
+}
+.btnDark:hover {
+  background: hsl(0, 0%, 58%);
+  color: hsl(0, 0%, 0%);
+}
+
+.winnerTitleDark {
+  color: white;
+  margin: 0;
+  margin-bottom: 1rem;
+  transition: all 0.3s linear;
 }
